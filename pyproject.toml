@@ -1,0 +1,46 @@
+[project]
+name = "bson-py"
+version = "1.0.0"
+description = "Independent BSON codec for Python that doesn't depend on MongoDB"
+requires-python = ">=3.7"
+authors = [
+    { name = "The MongoDB Python Team" },
+]
+readme = "README.md"
+keywords = [
+    "bson",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Database",
+    "Typing :: Typed",
+]
+
+[project.urls]
+homepage = "http://github.com/Dementiy/bson"
+repository = "http://github.com/Dementiy/bson"
+
+[build-system]
+requires = ["setuptools>=63.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["bson"]
+
+[tool.setuptools.package-data]
+bson=["py.typed", "*.pyi"]

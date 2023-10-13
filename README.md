@@ -1,0 +1,1 @@
+Python package for reading, writing, and manipulating BSON. Originally developed as part of [pymongo](https://github.com/mongodb/mongo-python-driver) package.
